@@ -28,7 +28,7 @@ class Test_Class(unittest.TestCase):
         self.assertEqual(len(captured.records), 1)
         self.assertEqual(captured.records[0].getMessage(), "Non Existing Check")
 
-    def test_for_String(self):
+    def test_for_string(self):
         with self.assertLogs() as captured:
             Testing_Plot_Class("UserName")
         self.assertEqual(len(captured.records), 1)

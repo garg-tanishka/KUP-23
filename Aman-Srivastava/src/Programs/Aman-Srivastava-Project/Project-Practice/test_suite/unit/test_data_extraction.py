@@ -1,6 +1,7 @@
 import logging
 import pandas as pd
 import matplotlib.pyplot as plt
+from src.utils.constants import dataset_path
 
 
 class Testing_Plot_Class:
@@ -11,10 +12,10 @@ class Testing_Plot_Class:
         @param knolder_id: User ID of Knolder's Employee's
         @type knolder_id: Integer
         """
-        read_file = pd.read_csv("/home/knoldus/Aman/Project-Practice/DataSets/individual_contribution.csv")
+        read_file = pd.read_csv(dataset_path)
         self.data_frame = pd.DataFrame(read_file)
         self.knolder_id = knolder_id
-        self.test_plot_Scores()
+        self.test_plot_scores()
 
     def test_return_single_user_data(self):
         """
@@ -35,17 +36,16 @@ class Testing_Plot_Class:
             data_frame = self.test_return_single_user_data()
 
             user_score = data_frame["total_score"].loc[data_frame["knolder_id"] == self.knolder_id].values
-
             years = data_frame["year"].loc[data_frame["knolder_id"] == self.knolder_id].values
-
             user_name = data_frame['full_name'].iloc[0]
+
             user_data = [user_name, user_score, years]
             return user_data
 
         else:
             return 0
 
-    def test_plot_Scores(self):
+    def test_plot_scores(self):
         """
         Plotting Users Scores, Name in Particular Years using Bar-Plot
         """
