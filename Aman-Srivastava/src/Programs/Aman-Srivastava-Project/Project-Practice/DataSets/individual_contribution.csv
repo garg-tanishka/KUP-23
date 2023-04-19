@@ -1,0 +1,1103 @@
+,knolder_id,full_name,year,total_score
+0,1,Sidharth Khattri,2018,55
+1,1,Sidharth Khattri,2019,30
+2,1,Sidharth Khattri,2020,0
+3,1,Sidharth Khattri,2021,0
+4,1,Sidharth Khattri,2022,0
+5,2,Manish Kumar Mishra,2018,30
+6,2,Manish Kumar Mishra,2019,100
+7,2,Manish Kumar Mishra,2020,55
+8,2,Manish Kumar Mishra,2021,60
+9,2,Manish Kumar Mishra,2022,15
+10,3,Narayan Kumar,2018,5
+11,3,Narayan Kumar,2019,65
+12,3,Narayan Kumar,2020,30
+13,3,Narayan Kumar,2021,15
+14,3,Narayan Kumar,2022,0
+15,5,Gaurav Kumar Shukla,2018,80
+16,5,Gaurav Kumar Shukla,2019,70
+17,5,Gaurav Kumar Shukla,2020,55
+18,5,Gaurav Kumar Shukla,2021,25
+19,5,Gaurav Kumar Shukla,2022,0
+20,11,Prabhat Kashyap,2018,130
+21,11,Prabhat Kashyap,2019,210
+22,11,Prabhat Kashyap,2020,15
+23,11,Prabhat Kashyap,2021,60
+24,11,Prabhat Kashyap,2022,0
+25,15,Azmat Hasan,2018,0
+26,15,Azmat Hasan,2019,95
+27,15,Azmat Hasan,2020,195
+28,15,Azmat Hasan,2021,205
+29,15,Azmat Hasan,2022,0
+30,16,Megha Jatana,2018,0
+31,16,Megha Jatana,2019,20
+32,16,Megha Jatana,2020,40
+33,16,Megha Jatana,2021,0
+34,16,Megha Jatana,2022,0
+35,19,Ruchika Dubey,2018,20
+36,19,Ruchika Dubey,2019,35
+37,19,Ruchika Dubey,2020,70
+38,19,Ruchika Dubey,2021,90
+39,19,Ruchika Dubey,2022,0
+40,20,Himanshu Gupta,2018,50
+41,20,Himanshu Gupta,2019,150
+42,20,Himanshu Gupta,2020,155
+43,20,Himanshu Gupta,2021,20
+44,20,Himanshu Gupta,2022,0
+45,21,Vikas Hazrati,2018,20
+46,21,Vikas Hazrati,2019,395
+47,21,Vikas Hazrati,2020,35
+48,21,Vikas Hazrati,2021,5
+49,21,Vikas Hazrati,2022,5
+50,24,Upanshu Chaudhary,2018,0
+51,24,Upanshu Chaudhary,2019,0
+52,24,Upanshu Chaudhary,2020,110
+53,24,Upanshu Chaudhary,2021,80
+54,24,Upanshu Chaudhary,2022,0
+55,25,Muskan Gupta,2018,0
+56,25,Muskan Gupta,2019,0
+57,25,Muskan Gupta,2020,505
+58,25,Muskan Gupta,2021,485
+59,25,Muskan Gupta,2022,70
+60,30,kundan kumar,2018,0
+61,30,kundan kumar,2019,5
+62,30,kundan kumar,2020,320
+63,30,kundan kumar,2021,100
+64,30,kundan kumar,2022,30
+65,31,Jasmine Kaur,2018,20
+66,31,Jasmine Kaur,2019,70
+67,31,Jasmine Kaur,2020,85
+68,31,Jasmine Kaur,2021,65
+69,31,Jasmine Kaur,2022,0
+70,34,Swantika Gupta,2018,0
+71,34,Swantika Gupta,2019,10
+72,34,Swantika Gupta,2020,155
+73,34,Swantika Gupta,2021,25
+74,34,Swantika Gupta,2022,0
+75,41,Pawan Bisht,2018,0
+76,41,Pawan Bisht,2019,460
+77,41,Pawan Bisht,2020,515
+78,41,Pawan Bisht,2021,170
+79,41,Pawan Bisht,2022,0
+80,43,Mukesh Yadav,2018,0
+81,43,Mukesh Yadav,2019,0
+82,43,Mukesh Yadav,2020,110
+83,43,Mukesh Yadav,2021,30
+84,43,Mukesh Yadav,2022,0
+85,44,Etash,2018,0
+86,44,Etash,2019,5
+87,44,Etash,2020,170
+88,44,Etash,2021,55
+89,44,Etash,2022,0
+90,45,Shivraj Singh,2018,0
+91,45,Shivraj Singh,2019,0
+92,45,Shivraj Singh,2020,130
+93,45,Shivraj Singh,2021,25
+94,45,Shivraj Singh,2022,0
+95,50,Sanjana Aggarwal,2018,0
+96,50,Sanjana Aggarwal,2019,0
+97,50,Sanjana Aggarwal,2020,310
+98,50,Sanjana Aggarwal,2021,40
+99,50,Sanjana Aggarwal,2022,0
+100,51,Munander Singh,2018,0
+101,51,Munander Singh,2019,40
+102,51,Munander Singh,2020,140
+103,51,Munander Singh,2021,10
+104,51,Munander Singh,2022,50
+105,52,Harshit Daga,2018,0
+106,52,Harshit Daga,2019,15
+107,52,Harshit Daga,2020,20
+108,52,Harshit Daga,2021,55
+109,52,Harshit Daga,2022,0
+110,53,Ankur Thakur,2018,0
+111,53,Ankur Thakur,2019,30
+112,53,Ankur Thakur,2020,110
+113,53,Ankur Thakur,2021,135
+114,53,Ankur Thakur,2022,0
+115,57,Manas Kashyap,2018,0
+116,57,Manas Kashyap,2019,0
+117,57,Manas Kashyap,2020,60
+118,57,Manas Kashyap,2021,440
+119,57,Manas Kashyap,2022,0
+120,59,Lokesh Aggarwal,2018,0
+121,59,Lokesh Aggarwal,2019,5
+122,59,Lokesh Aggarwal,2020,170
+123,59,Lokesh Aggarwal,2021,100
+124,59,Lokesh Aggarwal,2022,5
+125,61,Yatharth Sharma,2018,0
+126,61,Yatharth Sharma,2019,65
+127,61,Yatharth Sharma,2020,85
+128,61,Yatharth Sharma,2021,140
+129,61,Yatharth Sharma,2022,0
+130,62,Bhavya Aggarwal,2018,60
+131,62,Bhavya Aggarwal,2019,55
+132,62,Bhavya Aggarwal,2020,25
+133,62,Bhavya Aggarwal,2021,20
+134,62,Bhavya Aggarwal,2022,0
+135,63,Ram Indukuri,2018,0
+136,63,Ram Indukuri,2019,5
+137,63,Ram Indukuri,2020,20
+138,63,Ram Indukuri,2021,0
+139,63,Ram Indukuri,2022,0
+140,68,Sakshi Gawande,2018,0
+141,68,Sakshi Gawande,2019,15
+142,68,Sakshi Gawande,2020,95
+143,68,Sakshi Gawande,2021,190
+144,68,Sakshi Gawande,2022,0
+145,74,Jashan Goyal,2018,0
+146,74,Jashan Goyal,2019,25
+147,74,Jashan Goyal,2020,30
+148,74,Jashan Goyal,2021,0
+149,74,Jashan Goyal,2022,0
+150,76,Piyush Rana,2018,50
+151,76,Piyush Rana,2019,300
+152,76,Piyush Rana,2020,310
+153,76,Piyush Rana,2021,20
+154,76,Piyush Rana,2022,0
+155,87,Shubhrank Rastogi,2018,0
+156,87,Shubhrank Rastogi,2019,50
+157,87,Shubhrank Rastogi,2020,60
+158,87,Shubhrank Rastogi,2021,55
+159,87,Shubhrank Rastogi,2022,30
+160,92,Rajeev Thakur,2018,5
+161,92,Rajeev Thakur,2019,0
+162,92,Rajeev Thakur,2020,0
+163,92,Rajeev Thakur,2021,0
+164,92,Rajeev Thakur,2022,0
+165,102,Mansi Babbar,2018,0
+166,102,Mansi Babbar,2019,0
+167,102,Mansi Babbar,2020,270
+168,102,Mansi Babbar,2021,310
+169,102,Mansi Babbar,2022,0
+170,106,Addi Kumar,2018,0
+171,106,Addi Kumar,2019,0
+172,106,Addi Kumar,2020,100
+173,106,Addi Kumar,2021,30
+174,106,Addi Kumar,2022,30
+175,107,Anshika Agrawal,2018,0
+176,107,Anshika Agrawal,2019,0
+177,107,Anshika Agrawal,2020,5
+178,107,Anshika Agrawal,2021,35
+179,107,Anshika Agrawal,2022,20
+180,108,Gaurav Agarwal,2018,0
+181,108,Gaurav Agarwal,2019,0
+182,108,Gaurav Agarwal,2020,0
+183,108,Gaurav Agarwal,2021,0
+184,108,Gaurav Agarwal,2022,0
+185,111,Diksha Yadav,2018,0
+186,111,Diksha Yadav,2019,0
+187,111,Diksha Yadav,2020,0
+188,111,Diksha Yadav,2021,5
+189,111,Diksha Yadav,2022,0
+190,112,Umang Goyal,2018,0
+191,112,Umang Goyal,2019,0
+192,112,Umang Goyal,2020,105
+193,112,Umang Goyal,2021,85
+194,112,Umang Goyal,2022,10
+195,113,Abhinav Sharma,2018,0
+196,113,Abhinav Sharma,2019,0
+197,113,Abhinav Sharma,2020,45
+198,113,Abhinav Sharma,2021,0
+199,113,Abhinav Sharma,2022,100
+200,114,Kartik Tiwari,2018,0
+201,114,Kartik Tiwari,2019,0
+202,114,Kartik Tiwari,2020,40
+203,114,Kartik Tiwari,2021,0
+204,114,Kartik Tiwari,2022,0
+205,115,Shivani Mehrotra,2018,0
+206,115,Shivani Mehrotra,2019,0
+207,115,Shivani Mehrotra,2020,45
+208,115,Shivani Mehrotra,2021,10
+209,115,Shivani Mehrotra,2022,0
+210,116,Yamini Bansal,2018,0
+211,116,Yamini Bansal,2019,0
+212,116,Yamini Bansal,2020,120
+213,116,Yamini Bansal,2021,85
+214,116,Yamini Bansal,2022,0
+215,117,Suraj Saini,2018,0
+216,117,Suraj Saini,2019,0
+217,117,Suraj Saini,2020,45
+218,117,Suraj Saini,2021,10
+219,117,Suraj Saini,2022,0
+220,118,Sparsh Bhardwaj,2018,0
+221,118,Sparsh Bhardwaj,2019,0
+222,118,Sparsh Bhardwaj,2020,70
+223,118,Sparsh Bhardwaj,2021,195
+224,118,Sparsh Bhardwaj,2022,165
+225,119,Gopal Kumar Mahato,2018,0
+226,119,Gopal Kumar Mahato,2019,0
+227,119,Gopal Kumar Mahato,2020,65
+228,119,Gopal Kumar Mahato,2021,15
+229,119,Gopal Kumar Mahato,2022,0
+230,120,Atul Rawat,2018,0
+231,120,Atul Rawat,2019,0
+232,120,Atul Rawat,2020,5
+233,120,Atul Rawat,2021,0
+234,120,Atul Rawat,2022,0
+235,122,Aditi Varshney,2018,0
+236,122,Aditi Varshney,2019,0
+237,122,Aditi Varshney,2020,85
+238,122,Aditi Varshney,2021,5
+239,122,Aditi Varshney,2022,0
+240,123,Jitendra Kumar Singh,2018,0
+241,123,Jitendra Kumar Singh,2019,0
+242,123,Jitendra Kumar Singh,2020,10
+243,123,Jitendra Kumar Singh,2021,20
+244,123,Jitendra Kumar Singh,2022,0
+245,125,Megha Khurana,2018,0
+246,125,Megha Khurana,2019,0
+247,125,Megha Khurana,2020,0
+248,125,Megha Khurana,2021,0
+249,125,Megha Khurana,2022,0
+250,129,Sonu Mehrotra,2018,10
+251,129,Sonu Mehrotra,2019,0
+252,129,Sonu Mehrotra,2020,20
+253,129,Sonu Mehrotra,2021,25
+254,129,Sonu Mehrotra,2022,0
+255,130,Peter Haig Boyajian,2018,0
+256,130,Peter Haig Boyajian,2019,0
+257,130,Peter Haig Boyajian,2020,10
+258,130,Peter Haig Boyajian,2021,0
+259,130,Peter Haig Boyajian,2022,0
+260,131,Sam M Woodruff,2018,0
+261,131,Sam M Woodruff,2019,0
+262,131,Sam M Woodruff,2020,5
+263,131,Sam M Woodruff,2021,0
+264,131,Sam M Woodruff,2022,0
+265,132,Sowmya Chandrasekhar,2018,0
+266,132,Sowmya Chandrasekhar,2019,0
+267,132,Sowmya Chandrasekhar,2020,0
+268,132,Sowmya Chandrasekhar,2021,0
+269,132,Sowmya Chandrasekhar,2022,0
+270,133,Francisco Jose Bermejo Herrera,2018,0
+271,133,Francisco Jose Bermejo Herrera,2019,0
+272,133,Francisco Jose Bermejo Herrera,2020,0
+273,133,Francisco Jose Bermejo Herrera,2021,0
+274,133,Francisco Jose Bermejo Herrera,2022,0
+275,135,Ankit Kumar ,2018,0
+276,135,Ankit Kumar ,2019,0
+277,135,Ankit Kumar ,2020,0
+278,135,Ankit Kumar ,2021,0
+279,135,Ankit Kumar ,2022,0
+280,139,Aamir Shahab,2019,0
+281,139,Aamir Shahab,2020,0
+282,139,Aamir Shahab,2021,35
+283,139,Aamir Shahab,2022,0
+284,140,Aanchal Agarwal,2019,0
+285,140,Aanchal Agarwal,2020,0
+286,140,Aanchal Agarwal,2021,90
+287,140,Aanchal Agarwal,2022,95
+288,141,Abhijna Saksena,2019,0
+289,141,Abhijna Saksena,2020,0
+290,141,Abhijna Saksena,2021,25
+291,141,Abhijna Saksena,2022,0
+292,142,Aditya Narayan,2019,0
+293,142,Aditya Narayan,2020,0
+294,142,Aditya Narayan,2021,20
+295,142,Aditya Narayan,2022,30
+296,143,Aditya Sureshchand Rathor,2019,0
+297,143,Aditya Sureshchand Rathor,2020,0
+298,143,Aditya Sureshchand Rathor,2021,0
+299,143,Aditya Sureshchand Rathor,2022,0
+300,144,Agnibhas Chattopadhyay,2019,0
+301,144,Agnibhas Chattopadhyay,2020,0
+302,144,Agnibhas Chattopadhyay,2021,30
+303,144,Agnibhas Chattopadhyay,2022,30
+304,145,Aiden ,2019,0
+305,145,Aiden ,2020,0
+306,145,Aiden ,2021,5
+307,146,Ajay Singh Tomar,2019,0
+308,146,Ajay Singh Tomar,2020,0
+309,146,Ajay Singh Tomar,2021,0
+310,146,Ajay Singh Tomar,2022,0
+311,147,Akash Tiwari,2019,0
+312,147,Akash Tiwari,2020,0
+313,147,Akash Tiwari,2021,0
+314,147,Akash Tiwari,2022,0
+315,148,Akash Kale,2019,0
+316,148,Akash Kale,2020,0
+317,148,Akash Kale,2021,15
+318,148,Akash Kale,2022,5
+319,149,Akash Priyadarshi,2019,0
+320,149,Akash Priyadarshi,2020,0
+321,149,Akash Priyadarshi,2021,0
+322,149,Akash Priyadarshi,2022,20
+323,150,Alka Vats,2019,0
+324,150,Alka Vats,2020,0
+325,150,Alka Vats,2021,355
+326,150,Alka Vats,2022,170
+327,151,Aman Verma,2019,0
+328,151,Aman Verma,2020,0
+329,151,Aman Verma,2021,290
+330,151,Aman Verma,2022,10
+331,152,Ambika Bhardwaj,2019,0
+332,152,Ambika Bhardwaj,2020,0
+333,152,Ambika Bhardwaj,2021,0
+334,152,Ambika Bhardwaj,2022,0
+335,153,Amit Kumar,2019,0
+336,153,Amit Kumar,2020,0
+337,153,Amit Kumar,2021,5
+338,153,Amit Kumar,2022,10
+339,154,Ankit Mogha,2019,0
+340,154,Ankit Mogha,2020,0
+341,154,Ankit Mogha,2021,100
+342,154,Ankit Mogha,2022,15
+343,156,ANURADHA KUMARI,2019,0
+344,156,ANURADHA KUMARI,2020,0
+345,156,ANURADHA KUMARI,2021,50
+346,156,ANURADHA KUMARI,2022,145
+347,158,Asbin Bhadra,2019,0
+348,158,Asbin Bhadra,2020,0
+349,158,Asbin Bhadra,2021,100
+350,158,Asbin Bhadra,2022,0
+351,159,Ashish Chaudhary,2019,0
+352,159,Ashish Chaudhary,2020,0
+353,159,Ashish Chaudhary,2021,10
+354,159,Ashish Chaudhary,2022,0
+355,160,Ashutosh Dixit,2019,0
+356,160,Ashutosh Dixit,2020,0
+357,160,Ashutosh Dixit,2021,30
+358,160,Ashutosh Dixit,2022,10
+359,161,Ayushi Dwivedi,2019,0
+360,161,Ayushi Dwivedi,2020,0
+361,161,Ayushi Dwivedi,2021,115
+362,161,Ayushi Dwivedi,2022,0
+363,162,Bhavya Verma,2019,0
+364,162,Bhavya Verma,2020,0
+365,162,Bhavya Verma,2021,140
+366,162,Bhavya Verma,2022,0
+367,163,Deepa Mittal,2019,0
+368,163,Deepa Mittal,2020,0
+369,163,Deepa Mittal,2021,10
+370,163,Deepa Mittal,2022,0
+371,164,Deepika Jotwani,2019,0
+372,164,Deepika Jotwani,2020,0
+373,164,Deepika Jotwani,2021,0
+374,164,Deepika Jotwani,2022,0
+375,165,DIVYANSH DEVRANI,2019,0
+376,165,DIVYANSH DEVRANI,2020,0
+377,165,DIVYANSH DEVRANI,2021,0
+378,165,DIVYANSH DEVRANI,2022,75
+379,166,DURGESH GUPTA,2019,0
+380,166,DURGESH GUPTA,2020,0
+381,166,DURGESH GUPTA,2021,50
+382,166,DURGESH GUPTA,2022,55
+383,167,Fansheng ,2019,0
+384,167,Fansheng ,2020,0
+385,167,Fansheng ,2021,0
+386,167,Fansheng ,2022,0
+387,168,Gargi Sanadhya,2019,0
+388,168,Gargi Sanadhya,2020,0
+389,168,Gargi Sanadhya,2021,20
+390,168,Gargi Sanadhya,2022,45
+391,169,Gaurav Dubey,2019,0
+392,169,Gaurav Dubey,2020,0
+393,169,Gaurav Dubey,2021,30
+394,169,Gaurav Dubey,2022,90
+395,170,Gaurav Kumar,2019,0
+396,170,Gaurav Kumar,2020,0
+397,170,Gaurav Kumar,2021,35
+398,170,Gaurav Kumar,2022,25
+399,171,Gaurav Singh,2019,0
+400,171,Gaurav Singh,2020,0
+401,171,Gaurav Singh,2021,15
+402,171,Gaurav Singh,2022,0
+403,172,Gaurav Srivastav,2019,0
+404,172,Gaurav Srivastav,2020,0
+405,172,Gaurav Srivastav,2021,15
+406,172,Gaurav Srivastav,2022,115
+407,173,Gurpreet Kaur,2019,0
+408,173,Gurpreet Kaur,2020,0
+409,173,Gurpreet Kaur,2021,40
+410,173,Gurpreet Kaur,2022,0
+411,174,Hamza Khan,2019,0
+412,174,Hamza Khan,2020,0
+413,174,Hamza Khan,2021,0
+414,174,Hamza Khan,2022,0
+415,176,Harshit Gupta,2019,0
+416,176,Harshit Gupta,2020,0
+417,176,Harshit Gupta,2021,80
+418,176,Harshit Gupta,2022,270
+419,177,Hemlata Kashyap,2019,0
+420,177,Hemlata Kashyap,2020,0
+421,177,Hemlata Kashyap,2021,0
+422,177,Hemlata Kashyap,2022,0
+423,179,Himanshu Chaudhary,2019,0
+424,179,Himanshu Chaudhary,2020,0
+425,179,Himanshu Chaudhary,2021,90
+426,179,Himanshu Chaudhary,2022,170
+427,180,Himanshu Uniyal,2019,0
+428,180,Himanshu Uniyal,2020,0
+429,180,Himanshu Uniyal,2021,0
+430,180,Himanshu Uniyal,2022,0
+431,181,Himanshu Upadhayay,2019,0
+432,181,Himanshu Upadhayay,2020,0
+433,181,Himanshu Upadhayay,2021,45
+434,181,Himanshu Upadhayay,2022,80
+435,182,Humera ahmad,2019,0
+436,182,Humera ahmad,2020,0
+437,182,Humera ahmad,2021,15
+438,182,Humera ahmad,2022,30
+439,183,Jagdish Singh,2019,0
+440,183,Jagdish Singh,2020,0
+441,183,Jagdish Singh,2021,45
+442,183,Jagdish Singh,2022,0
+443,184,John Lacalamita,2019,0
+444,184,John Lacalamita,2020,0
+445,184,John Lacalamita,2021,5
+446,185,Jony Mandal,2019,0
+447,185,Jony Mandal,2020,0
+448,185,Jony Mandal,2021,25
+449,185,Jony Mandal,2022,0
+450,186,Kiran Jeet kaur,2019,0
+451,186,Kiran Jeet kaur,2020,0
+452,186,Kiran Jeet kaur,2021,85
+453,186,Kiran Jeet kaur,2022,110
+454,187,Kuldeep Swaroop,2019,0
+455,187,Kuldeep Swaroop,2020,0
+456,187,Kuldeep Swaroop,2021,15
+457,187,Kuldeep Swaroop,2022,50
+458,188,Kuldeepak Gupta,2019,0
+459,188,Kuldeepak Gupta,2020,0
+460,188,Kuldeepak Gupta,2021,485
+461,188,Kuldeepak Gupta,2022,350
+462,189,Kumar Pratik,2019,0
+463,189,Kumar Pratik,2020,25
+464,189,Kumar Pratik,2021,40
+465,189,Kumar Pratik,2022,60
+466,190,Lavi Garga,2019,0
+467,190,Lavi Garga,2020,0
+468,190,Lavi Garga,2021,0
+469,190,Lavi Garga,2022,0
+470,191,Manisha Bhatnagar,2019,0
+471,191,Manisha Bhatnagar,2020,0
+472,191,Manisha Bhatnagar,2021,0
+473,191,Manisha Bhatnagar,2022,0
+474,192,Mayank Verma,2019,0
+475,192,Mayank Verma,2020,0
+476,192,Mayank Verma,2021,0
+477,192,Mayank Verma,2022,95
+478,193,Mayura Sunil Zadane,2019,0
+479,193,Mayura Sunil Zadane,2020,0
+480,193,Mayura Sunil Zadane,2021,30
+481,193,Mayura Sunil Zadane,2022,0
+482,194,Meenakshi Goyal,2019,0
+483,194,Meenakshi Goyal,2020,0
+484,194,Meenakshi Goyal,2021,185
+485,194,Meenakshi Goyal,2022,220
+486,195,Megha Tyagi,2019,0
+487,195,Megha Tyagi,2020,0
+488,195,Megha Tyagi,2021,0
+489,195,Megha Tyagi,2022,0
+490,196,Mithilesh Singh,2019,0
+491,196,Mithilesh Singh,2020,0
+492,196,Mithilesh Singh,2021,85
+493,196,Mithilesh Singh,2022,5
+494,197,Mohammad Yasir,2019,0
+495,197,Mohammad Yasir,2020,0
+496,197,Mohammad Yasir,2021,15
+497,197,Mohammad Yasir,2022,0
+498,198,Mohd Alimuddin,2019,0
+499,198,Mohd Alimuddin,2020,0
+500,198,Mohd Alimuddin,2021,90
+501,198,Mohd Alimuddin,2022,0
+502,199,Mohit Saxena,2019,0
+503,199,Mohit Saxena,2020,0
+504,199,Mohit Saxena,2021,1265
+505,199,Mohit Saxena,2022,640
+506,200,Mukesh Gupta,2019,0
+507,200,Mukesh Gupta,2020,0
+508,200,Mukesh Gupta,2021,0
+509,200,Mukesh Gupta,2022,0
+510,201,Narayan Aher,2019,0
+511,201,Narayan Aher,2020,0
+512,201,Narayan Aher,2021,0
+513,201,Narayan Aher,2022,0
+514,202,Naveen Singh Panwar,2019,0
+515,202,Naveen Singh Panwar,2020,0
+516,202,Naveen Singh Panwar,2021,10
+517,202,Naveen Singh Panwar,2022,0
+518,203,Neeraj Chaurasia,2019,0
+519,203,Neeraj Chaurasia,2020,0
+520,203,Neeraj Chaurasia,2021,0
+521,203,Neeraj Chaurasia,2022,0
+522,204,Neha Kumari,2019,0
+523,204,Neha Kumari,2020,0
+524,204,Neha Kumari,2021,0
+525,204,Neha Kumari,2022,0
+526,205,Nikhil Varghese,2019,0
+527,205,Nikhil Varghese,2020,0
+528,205,Nikhil Varghese,2021,25
+529,205,Nikhil Varghese,2022,0
+530,206,Nilesh Kumar Gupta,2019,0
+531,206,Nilesh Kumar Gupta,2020,0
+532,206,Nilesh Kumar Gupta,2021,0
+533,206,Nilesh Kumar Gupta,2022,0
+534,207,Niraj Kumar,2019,0
+535,207,Niraj Kumar,2020,0
+536,207,Niraj Kumar,2021,0
+537,207,Niraj Kumar,2022,0
+538,208,Niraj Kumar Sharma,2019,0
+539,208,Niraj Kumar Sharma,2020,0
+540,208,Niraj Kumar Sharma,2021,55
+541,208,Niraj Kumar Sharma,2022,0
+542,209,NITIN MITTAL,2019,0
+543,209,NITIN MITTAL,2020,0
+544,209,NITIN MITTAL,2021,5
+545,209,NITIN MITTAL,2022,0
+546,211,Nitin Saxena,2019,0
+547,211,Nitin Saxena,2020,0
+548,211,Nitin Saxena,2021,300
+549,211,Nitin Saxena,2022,35
+550,212,Nitin Mishra,2019,0
+551,212,Nitin Mishra,2020,0
+552,212,Nitin Mishra,2021,140
+553,212,Nitin Mishra,2022,115
+554,213,Nitish Chopra,2019,0
+555,213,Nitish Chopra,2020,0
+556,213,Nitish Chopra,2021,0
+557,213,Nitish Chopra,2022,0
+558,214,Piyush Agarwal,2019,0
+559,214,Piyush Agarwal,2020,0
+560,214,Piyush Agarwal,2021,80
+561,214,Piyush Agarwal,2022,100
+562,215,Pooja Chawla,2019,0
+563,215,Pooja Chawla,2020,0
+564,215,Pooja Chawla,2021,25
+565,215,Pooja Chawla,2022,5
+566,216,Praanav Bhowmik,2019,0
+567,216,Praanav Bhowmik,2020,0
+568,216,Praanav Bhowmik,2021,50
+569,216,Praanav Bhowmik,2022,55
+570,217,Prachi Singh,2019,0
+571,217,Prachi Singh,2020,0
+572,217,Prachi Singh,2021,5
+573,217,Prachi Singh,2022,0
+574,218,Prajjawal Kansal,2019,0
+575,218,Prajjawal Kansal,2020,0
+576,218,Prajjawal Kansal,2021,195
+577,218,Prajjawal Kansal,2022,95
+578,219,Pranay Rajput,2019,0
+579,219,Pranay Rajput,2020,0
+580,219,Pranay Rajput,2021,85
+581,219,Pranay Rajput,2022,10
+582,220,Prashant Trivedi,2019,0
+583,220,Prashant Trivedi,2020,0
+584,220,Prashant Trivedi,2021,30
+585,220,Prashant Trivedi,2022,90
+586,221,Prashant Singh,2019,0
+587,221,Prashant Singh,2020,0
+588,221,Prashant Singh,2021,0
+589,221,Prashant Singh,2022,0
+590,222,Prateek Gupta,2019,0
+591,222,Prateek Gupta,2020,0
+592,222,Prateek Gupta,2021,155
+593,222,Prateek Gupta,2022,715
+594,223,Preeti Sahu,2019,0
+595,223,Preeti Sahu,2020,0
+596,223,Preeti Sahu,2021,0
+597,223,Preeti Sahu,2022,0
+598,224,Prem Shankar Prasad Sah,2019,0
+599,224,Prem Shankar Prasad Sah,2020,0
+600,224,Prem Shankar Prasad Sah,2021,0
+601,224,Prem Shankar Prasad Sah,2022,0
+602,225,Prince Agrahari,2019,0
+603,225,Prince Agrahari,2020,0
+604,225,Prince Agrahari,2021,5
+605,225,Prince Agrahari,2022,0
+606,226,Punit Ramani,2019,0
+607,226,Punit Ramani,2020,0
+608,226,Punit Ramani,2021,20
+609,226,Punit Ramani,2022,60
+610,227,Purva Agrawal,2019,0
+611,227,Purva Agrawal,2020,30
+612,227,Purva Agrawal,2021,20
+613,227,Purva Agrawal,2022,140
+614,229,Rahul Agrawal,2019,0
+615,229,Rahul Agrawal,2020,0
+616,229,Rahul Agrawal,2021,0
+617,229,Rahul Agrawal,2022,0
+618,230,Rahul khowal,2019,0
+619,230,Rahul khowal,2020,0
+620,230,Rahul khowal,2021,25
+621,230,Rahul khowal,2022,0
+622,231,Rahul Miglani,2019,0
+623,231,Rahul Miglani,2020,0
+624,231,Rahul Miglani,2021,195
+625,231,Rahul Miglani,2022,30
+626,232,Ravinder Dua,2019,0
+627,232,Ravinder Dua,2020,0
+628,232,Ravinder Dua,2021,5
+629,232,Ravinder Dua,2022,0
+630,233,Raviyanshu Pratap Singh,2019,0
+631,233,Raviyanshu Pratap Singh,2020,0
+632,233,Raviyanshu Pratap Singh,2021,40
+633,233,Raviyanshu Pratap Singh,2022,25
+634,234,Richa Hazrati,2019,0
+635,234,Richa Hazrati,2020,0
+636,234,Richa Hazrati,2021,0
+637,234,Richa Hazrati,2022,0
+638,235,Rishabh Verma,2019,0
+639,235,Rishabh Verma,2020,0
+640,235,Rishabh Verma,2021,0
+641,235,Rishabh Verma,2022,0
+642,236,Rituraj Khare,2019,0
+643,236,Rituraj Khare,2020,0
+644,236,Rituraj Khare,2021,30
+645,236,Rituraj Khare,2022,20
+646,237,Riya ,2019,0
+647,237,Riya ,2020,0
+648,237,Riya ,2021,15
+649,237,Riya ,2022,65
+650,238,Rohit Jagati,2019,0
+651,238,Rohit Jagati,2020,0
+652,238,Rohit Jagati,2021,35
+653,238,Rohit Jagati,2022,5
+654,239,Romit Saxena,2019,0
+655,239,Romit Saxena,2020,0
+656,239,Romit Saxena,2021,0
+657,239,Romit Saxena,2022,15
+658,240,Sagar Goel,2019,0
+659,240,Sagar Goel,2020,0
+660,240,Sagar Goel,2021,0
+661,240,Sagar Goel,2022,0
+662,241,Sahil Sawhney,2019,0
+663,241,Sahil Sawhney,2020,0
+664,241,Sahil Sawhney,2021,0
+665,242,Sakshi Malik,2019,0
+666,242,Sakshi Malik,2020,0
+667,242,Sakshi Malik,2021,5
+668,242,Sakshi Malik,2022,0
+669,243,Sakshi Mittal,2019,0
+670,243,Sakshi Mittal,2020,0
+671,243,Sakshi Mittal,2021,55
+672,243,Sakshi Mittal,2022,80
+673,244,Sanjay Panu,2019,0
+674,244,Sanjay Panu,2020,0
+675,244,Sanjay Panu,2021,0
+676,244,Sanjay Panu,2022,0
+677,245,Sanjay Rathore,2019,0
+678,245,Sanjay Rathore,2020,0
+679,245,Sanjay Rathore,2021,40
+680,245,Sanjay Rathore,2022,0
+681,247,Sara Naeem,2019,0
+682,247,Sara Naeem,2020,0
+683,247,Sara Naeem,2021,5
+684,248,Satyam Sangal,2019,0
+685,248,Satyam Sangal,2020,0
+686,248,Satyam Sangal,2021,15
+687,248,Satyam Sangal,2022,0
+688,249,Saumya ,2019,0
+689,249,Saumya ,2020,0
+690,249,Saumya ,2021,125
+691,249,Saumya ,2022,0
+692,250,Sebastian Harko,2019,0
+693,250,Sebastian Harko,2020,0
+694,250,Sebastian Harko,2021,0
+695,250,Sebastian Harko,2022,0
+696,251,SHIVANI SARTHI,2019,0
+697,251,SHIVANI SARTHI,2020,0
+698,251,SHIVANI SARTHI,2021,200
+699,251,SHIVANI SARTHI,2022,135
+700,252,Shiv Suraj Oberoi,2019,0
+701,252,Shiv Suraj Oberoi,2020,0
+702,252,Shiv Suraj Oberoi,2021,30
+703,252,Shiv Suraj Oberoi,2022,40
+704,253,Shivam Gupta,2019,0
+705,253,Shivam Gupta,2020,0
+706,253,Shivam Gupta,2021,30
+707,253,Shivam Gupta,2022,0
+708,254,Shivani Verma,2019,0
+709,254,Shivani Verma,2020,0
+710,254,Shivani Verma,2021,0
+711,254,Shivani Verma,2022,0
+712,255,Shradha Saxena,2019,0
+713,255,Shradha Saxena,2020,20
+714,255,Shradha Saxena,2021,0
+715,255,Shradha Saxena,2022,20
+716,256,Sumit Agarwal,2019,0
+717,256,Sumit Agarwal,2020,0
+718,256,Sumit Agarwal,2021,20
+719,256,Sumit Agarwal,2022,30
+720,257,Sumit Raj,2019,0
+721,257,Sumit Raj,2020,0
+722,257,Sumit Raj,2021,50
+723,257,Sumit Raj,2022,0
+724,258,Sushma Nayak,2019,0
+725,258,Sushma Nayak,2020,0
+726,258,Sushma Nayak,2021,40
+727,258,Sushma Nayak,2022,95
+728,259,Syed Mohd Bilal Ali,2019,0
+729,259,Syed Mohd Bilal Ali,2020,0
+730,259,Syed Mohd Bilal Ali,2021,5
+731,259,Syed Mohd Bilal Ali,2022,0
+732,260,Tanishka Garg,2019,0
+733,260,Tanishka Garg,2020,0
+734,260,Tanishka Garg,2021,125
+735,260,Tanishka Garg,2022,115
+736,261,Toshima Sharma,2019,0
+737,261,Toshima Sharma,2020,0
+738,261,Toshima Sharma,2021,0
+739,261,Toshima Sharma,2022,15
+740,262,Utkarsh Upadhyay,2019,0
+741,262,Utkarsh Upadhyay,2020,0
+742,262,Utkarsh Upadhyay,2021,90
+743,262,Utkarsh Upadhyay,2022,20
+744,263,Vaibhav Sharma,2019,0
+745,263,Vaibhav Sharma,2020,0
+746,263,Vaibhav Sharma,2021,30
+747,263,Vaibhav Sharma,2022,30
+748,265,Venkatesh Kola,2019,0
+749,265,Venkatesh Kola,2020,0
+750,265,Venkatesh Kola,2021,0
+751,265,Venkatesh Kola,2022,0
+752,266,Vidushi Bansal,2019,0
+753,266,Vidushi Bansal,2020,0
+754,266,Vidushi Bansal,2021,85
+755,266,Vidushi Bansal,2022,30
+756,267,Vijay Kumar Jamdagni,2019,0
+757,267,Vijay Kumar Jamdagni,2020,0
+758,267,Vijay Kumar Jamdagni,2021,5
+759,267,Vijay Kumar Jamdagni,2022,0
+760,268,Vikas Vashisth,2019,0
+761,268,Vikas Vashisth,2020,0
+762,268,Vikas Vashisth,2021,365
+763,268,Vikas Vashisth,2022,450
+764,269,Vipul Kumar,2019,0
+765,269,Vipul Kumar,2020,0
+766,269,Vipul Kumar,2021,75
+767,269,Vipul Kumar,2022,25
+768,271,Vishal Jangid,2019,0
+769,271,Vishal Jangid,2020,0
+770,271,Vishal Jangid,2021,5
+771,271,Vishal Jangid,2022,0
+772,272,Vishant Sharma,2019,0
+773,272,Vishant Sharma,2020,0
+774,272,Vishant Sharma,2021,0
+775,272,Vishant Sharma,2022,0
+776,273,Yash Gupta,2019,0
+777,273,Yash Gupta,2020,0
+778,273,Yash Gupta,2021,110
+779,273,Yash Gupta,2022,20
+780,274,Navneet Kumar Bajpai,2019,0
+781,274,Navneet Kumar Bajpai,2020,0
+782,274,Navneet Kumar Bajpai,2021,0
+783,274,Navneet Kumar Bajpai,2022,0
+784,306,Rohit Sharma,2021,65
+785,306,Rohit Sharma,2022,0
+786,307,Shaurav Rajan,2021,30
+787,307,Shaurav Rajan,2022,0
+788,308,Dipayan Pramanik,2021,150
+789,308,Dipayan Pramanik,2022,495
+790,316,pranay.reddy,2021,0
+791,316,pranay.reddy,2022,0
+792,317,Mayuri Dhote,2021,45
+793,317,Mayuri Dhote,2022,255
+794,318,Rahul Soni,2021,55
+795,318,Rahul Soni,2022,220
+796,319,Jubair Ahmad,2021,25
+797,319,Jubair Ahmad,2022,450
+798,320,Mohd MuZakkir Saifi,2021,40
+799,320,Mohd MuZakkir Saifi,2022,180
+800,321,Shubham Gupta,2021,25
+801,321,Shubham Gupta,2022,285
+802,322,ashi.dubey,2021,45
+803,322,ashi.dubey,2022,165
+804,323,Rishi Kumar Ray,2021,185
+805,323,Rishi Kumar Ray,2022,1740
+806,324,Rishivant Singh,2021,95
+807,324,Rishivant Singh,2022,505
+808,325,neha.singh,2021,35
+809,325,neha.singh,2022,200
+810,326,Deeksha Tripathi,2021,55
+811,326,Deeksha Tripathi,2022,350
+812,327,Vaishali Yadav,2021,0
+813,327,Vaishali Yadav,2022,0
+814,328,aasif.ali,2021,10
+815,328,aasif.ali,2022,50
+816,329,sachin.kumar,2021,30
+817,329,sachin.kumar,2022,85
+818,330,Naincy Kumari,2021,55
+819,330,Naincy Kumari,2022,1105
+820,331,Adesh Kumar Shukla,2021,15
+821,331,Adesh Kumar Shukla,2022,140
+822,332,shubham.saini,2021,35
+823,332,shubham.saini,2022,95
+824,333,Amarjeet Singh,2021,35
+825,333,Amarjeet Singh,2022,40
+826,334,Lokesh Kumar,2021,95
+827,334,Lokesh Kumar,2022,0
+828,335,Akshit Kumar,2021,5
+829,335,Akshit Kumar,2022,100
+830,336,Ronak Janawa,2021,0
+831,336,Ronak Janawa,2022,0
+832,337,parasjain,2021,0
+833,337,parasjain,2022,30
+834,338,chiranjeev.kumar,2021,10
+835,338,chiranjeev.kumar,2022,100
+836,339,rakhi.pareek,2021,0
+837,339,rakhi.pareek,2022,25
+838,340,mayank.rajput,2021,0
+839,340,mayank.rajput,2022,0
+840,341,shashikant.tyagi,2021,10
+841,341,shashikant.tyagi,2022,25
+842,342,Gulshan Singh,2021,10
+843,342,Gulshan Singh,2022,30
+844,343,Anshita Mathur,2021,20
+845,343,Anshita Mathur,2022,30
+846,344,Arpit Gupta,2021,0
+847,344,Arpit Gupta,2022,0
+848,345,Devanshu Verma,2021,5
+849,345,Devanshu Verma,2022,45
+850,346,navdeep.parash,2021,0
+851,346,navdeep.parash,2022,0
+852,347,Akshat Mathur,2021,15
+853,347,Akshat Mathur,2022,20
+854,348,gvijay.kumar,2021,5
+855,348,gvijay.kumar,2022,0
+856,349,Amer Mohammed,2021,0
+857,349,Amer Mohammed,2022,0
+858,350,Ayush Kumar Tiwari,2021,5
+859,350,Ayush Kumar Tiwari,2022,20
+860,351,rohan.mutyal,2021,0
+861,351,rohan.mutyal,2022,0
+862,352,chirag mathur,2021,15
+863,352,chirag mathur,2022,35
+864,353,deepak.sharma,2021,5
+865,353,deepak.sharma,2022,0
+866,354,gayatri.singh,2021,65
+867,354,gayatri.singh,2022,330
+868,355,Prakhar Rastogi,2021,5
+869,355,Prakhar Rastogi,2022,65
+870,356,Rohit Raj,2021,5
+871,356,Rohit Raj,2022,0
+872,357,Harsh Vardhan,2021,5
+873,357,Harsh Vardhan,2022,85
+874,358,Deepak kumar,2021,5
+875,358,Deepak kumar,2022,25
+876,359,pappu.bhardwaj,2021,10
+877,359,pappu.bhardwaj,2022,15
+878,360,shubham.shrivastava,2021,10
+879,360,shubham.shrivastava,2022,0
+880,361,vineet chauhan,2021,10
+881,361,vineet chauhan,2022,5
+882,362,Bhavya Garg,2021,5
+883,362,Bhavya Garg,2022,60
+884,363,Akash Kumar,2021,25
+885,363,Akash Kumar,2022,35
+886,364,Pratibha Yadav,2021,15
+887,364,Pratibha Yadav,2022,30
+888,365,Shivam Roy,2021,5
+889,365,Shivam Roy,2022,100
+890,366,satyender.yadav,2021,0
+891,366,satyender.yadav,2022,0
+892,367,udit.raj,2021,0
+893,367,udit.raj,2022,0
+894,368,Shashikant  Tanti,2021,10
+895,368,Shashikant  Tanti,2022,20
+896,369,Sonika Rai,2021,0
+897,369,Sonika Rai,2022,0
+898,370,afreen.ansari,2021,0
+899,370,afreen.ansari,2022,0
+900,371,Amit Nair,2021,0
+901,371,Amit Nair,2022,30
+902,372,Yamika Rajput,2021,35
+903,372,Yamika Rajput,2022,315
+904,373,pardeep.chaurasiya,2021,0
+905,373,pardeep.chaurasiya,2022,0
+906,374,Rahul kumar,2021,20
+907,374,Rahul kumar,2022,65
+908,375,ashutosh.kumar,2021,0
+909,376,Anirudh Singh Chauhan,2021,0
+910,376,Anirudh Singh Chauhan,2022,30
+911,377,Abhishek Singh,2021,0
+912,377,Abhishek Singh,2022,65
+913,378,mohammad.shafahad,2021,0
+914,378,mohammad.shafahad,2022,0
+915,379,sumit.singh,2021,0
+916,379,sumit.singh,2022,0
+917,380,Ayush Kumar,2021,0
+918,381,gaurav.sharma,2021,0
+919,381,gaurav.sharma,2022,0
+920,382,Sujeet Kumar Srivastava,2021,20
+921,382,Sujeet Kumar Srivastava,2022,90
+922,383,ujjawal.singh,2021,5
+923,383,ujjawal.singh,2022,0
+924,384,Himani Chauhan,2021,10
+925,384,Himani Chauhan,2022,0
+926,385,Deeksha Maurya,2021,5
+927,385,Deeksha Maurya,2022,55
+928,386,jitender.manral,2021,0
+929,386,jitender.manral,2022,0
+930,387,uzair.shaikh,2021,0
+931,387,uzair.shaikh,2022,30
+932,388,Chitra Singh,2021,70
+933,388,Chitra Singh,2022,30
+934,391,Krishna Jaiswal,2021,10
+935,391,Krishna Jaiswal,2022,50
+936,392,Sonu Kumar Sharma,2021,0
+937,392,Sonu Kumar Sharma,2022,0
+938,393,Saurabh Suresh Dhotre,2021,0
+939,393,Saurabh Suresh Dhotre,2022,35
+940,394,Sabia  Parveen,2021,0
+941,394,Sabia  Parveen,2022,30
+942,395,Amar Prakash  Chaubey,2021,0
+943,395,Amar Prakash  Chaubey,2022,10
+944,396,Abid  Khan,2021,0
+945,396,Abid  Khan,2022,25
+946,397,Bhavya Aggarwal,2021,0
+947,397,Bhavya Aggarwal,2022,0
+948,398,Aman Aman,2021,0
+949,398,Aman Aman,2022,0
+950,399,Pallav  Gupta,2021,0
+951,399,Pallav  Gupta,2022,45
+952,400,Niket Mittal,2021,10
+953,400,Niket Mittal,2022,20
+954,401,Shubham  Sharma,2021,0
+955,401,Shubham  Sharma,2022,20
+956,402,Shubham Bagrodia,2021,0
+957,402,Shubham Bagrodia,2022,10
+958,403,Prakhar  Singh,2021,0
+959,403,Prakhar  Singh,2022,50
+960,404,Nitesh  Kumar,2021,0
+961,404,Nitesh  Kumar,2022,30
+962,405,Pragati  Dubey,2021,0
+963,405,Pragati  Dubey,2022,25
+964,406,Gaurav  Raj,2021,0
+965,406,Gaurav  Raj,2022,0
+966,407,Nikhil  Gupta,2021,0
+967,407,Nikhil  Gupta,2022,30
+968,408,Harshal  Dubey,2021,0
+969,408,Harshal  Dubey,2022,35
+970,409,Shivam  Saxena,2021,0
+971,409,Shivam  Saxena,2022,25
+972,410,Rashid  Ali,2021,0
+973,410,Rashid  Ali,2022,0
+974,411,Priyanka  Sharma,2021,0
+975,411,Priyanka  Sharma,2022,0
+976,412,Mansi  Jain,2021,0
+977,412,Mansi  Jain,2022,15
+978,413,Shivam Rai,2021,5
+979,413,Shivam Rai,2022,10
+980,414,Gordon  Chieng,2021,0
+981,414,Gordon  Chieng,2022,0
+982,415,Abdella  Ibrahim,2021,0
+983,415,Abdella  Ibrahim,2022,0
+984,416,test employee,2021,0
+985,416,test employee,2022,0
+986,417,Parth .,2021,0
+987,417,Parth .,2022,0
+988,418,Vaanya Malik,2021,0
+989,418,Vaanya Malik,2022,15
+990,419,Chitra  Sapkal,2021,5
+991,419,Chitra  Sapkal,2022,75
+992,420,Om Prakash  Bajpai,2021,0
+993,420,Om Prakash  Bajpai,2022,0
+994,421,Kirti Ghugtyal,2021,0
+995,421,Kirti Ghugtyal,2022,20
+996,422,test studiohead,2021,0
+997,422,test studiohead,2022,0
+998,423,Vaibhav Pandey,2021,5
+999,423,Vaibhav Pandey,2022,5
+1000,424,Anuj  Tomar,2021,0
+1001,424,Anuj  Tomar,2022,0
+1002,425,Neha Poddar,2021,0
+1003,425,Neha Poddar,2022,0
+1004,426,Saurabh Kumar  Choudhary,2021,5
+1005,426,Saurabh Kumar  Choudhary,2022,10
+1006,427,Girish Kumar  Goyal,2021,0
+1007,427,Girish Kumar  Goyal,2022,0
+1008,428,Shubham  Sharma,2021,0
+1009,428,Shubham  Sharma,2022,5
+1010,429,Yogesh  Sharma,2021,0
+1011,429,Yogesh  Sharma,2022,20
+1012,430,Deepak  Kumar Arya,2021,0
+1013,430,Deepak  Kumar Arya,2022,0
+1014,431,Aayush Srivastava,2021,10
+1015,431,Aayush Srivastava,2022,90
+1016,432,test employee,2021,0
+1017,432,test employee,2022,100
+1018,433,Admin,2021,0
+1019,433,Admin,2022,0
+1020,434,Jatin  Raikwar,2021,0
+1021,434,Jatin  Raikwar,2022,0
+1022,435,Shashank  Khutwad,2021,0
+1023,435,Shashank  Khutwad,2022,0
+1024,436,Mohd Uzair,2021,0
+1025,436,Mohd Uzair,2022,30
+1026,437,Pushpendra  Sharma,2021,0
+1027,437,Pushpendra  Sharma,2022,0
+1028,438,Udit  Rawat,2021,0
+1029,438,Udit  Rawat,2022,25
+1030,439,Abhishek  Dwivedi,2021,0
+1031,439,Abhishek  Dwivedi,2022,0
+1032,440,Sachin  VD,2021,0
+1033,440,Sachin  VD,2022,0
+1034,441,Sushma Chowdary Dasari,2021,0
+1035,441,Sushma Chowdary Dasari,2022,0
+1036,442,Vikas Gupta,2021,0
+1037,442,Vikas Gupta,2022,0
+1038,443,Srinivas Palla,2021,0
+1039,443,Srinivas Palla,2022,0
+1040,444,Soniya Raichandani,2021,0
+1041,444,Soniya Raichandani,2022,50
+1042,445,Sunil Arjun Munde,2021,0
+1043,445,Sunil Arjun Munde,2022,0
+1044,446,Shubham  Rawat,2021,0
+1045,446,Shubham  Rawat,2022,45
+1046,447,Gaurav Kumar,2021,0
+1047,447,Gaurav Kumar,2022,0
+1048,448,Vikas Kataria,2021,0
+1049,448,Vikas Kataria,2022,0
+1050,449,Ankur  Patel,2021,0
+1051,449,Ankur  Patel,2022,40
+1052,450,Ayush  Rai,2021,0
+1053,450,Ayush  Rai,2022,50
+1054,451,Himanshu Gupta,2021,0
+1055,451,Himanshu Gupta,2022,10
+1056,452,Anand Jaiswal,2021,0
+1057,452,Anand Jaiswal,2022,0
+1058,453,Utkarsh  Paliwal,2021,0
+1059,453,Utkarsh  Paliwal,2022,0
+1060,454,Hitesh  Mahi,2021,0
+1061,454,Hitesh  Mahi,2022,0
+1062,455,Shreya  Saxena,2021,0
+1063,455,Shreya  Saxena,2022,10
+1064,456,Mohit Kumar,2021,0
+1065,456,Mohit Kumar,2022,0
+1066,457,Aman Kumar,2021,0
+1067,457,Aman Kumar,2022,0
+1068,458,Utkarsh  Ambastha,2021,0
+1069,458,Utkarsh  Ambastha,2022,0
+1070,459,Apoorv  Gautam,2021,0
+1071,459,Apoorv  Gautam,2022,15
+1072,460,Sachin Kumar  Saini,2021,0
+1073,460,Sachin Kumar  Saini,2022,0
+1074,461,Laurie-Anne Parant,2022,0
+1075,462,Manmeet Singh,2022,0
+1076,463,Devansh Kapoor,2022,0
+1077,464,Shashwat  Singh,2022,0
+1078,465,Vaibhav Kumar,2022,0
+1079,466,Rashmi  Garg,2022,0
+1080,467,Jasmine  Harit,2022,0
+1081,468,Atisha  Shaurya,2022,25
+1082,469,Kartikay  Bhardwaj,2022,0
+1083,470,Kunal Garg,2022,5
+1084,471,Shivam Pateriya,2022,30
+1085,472,Arunesh Jain,2022,0
+1086,473,Akanksha Mehta,2022,0
+1087,474,Balraj  Sabharwal,2022,0
+1088,475,Akshay  Gajeli,2022,0
+1089,476,Jatin Yadav,2022,0
+1090,477,Shivam  Mehta,2022,0
+1091,478,Ranu  Rajput,2022,0
+1092,479,Pavneet  Kaur,2022,5
+1093,480,Raghav  Goyal,2022,0
+1094,481,Lucky  Kumar,2022,0
+1095,482,Sakshi Sneha,2022,0
+1096,483,Sunil Kumar  Verma,2022,0
+1097,484,Esmatullah  Farahi,2022,0
+1098,485,Anushka  Roy,2022,0
+1099,486,Amelia  Wasowski,2022,0
+1100,488,Khalid,2022,0
+1101,490,Reetu Singh,2022,0
