@@ -1,16 +1,17 @@
-from test_cases import Graph
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
+import logging
+
+from src.utils.constant import file_path
 
 
-
-class Graph:
+class testing_create_graph_individual:
 
     def __init__(self, knolder_id):
-        file = pd.read_csv("/home/knoldus/PycharmProjects/practice_project1/dataset/individual_dataframe.csv")
-        self.data_frame = pd.DataFrame(file)
+        dataset = pd.read_csv(file_path)
+        self.data_frame = pd.DataFrame(dataset)
         self.knolder_id = knolder_id
-        self.create_graph_individual()
+        self.test_create_graph_individual()
 
     # function1 dataframe of a single knolder
     def test_extract_data_by_knolder_id(self):
@@ -21,7 +22,7 @@ class Graph:
     def test_get_score_and_name(self):
         if self.knolder_id in self.data_frame['knolder_id'].values:
 
-            user = self.extract_data_by_knolder_id()
+            user = self.test_extract_data_by_knolder_id()
 
             contribution = user['contribution'].loc[user['knolder_id'] == self.knolder_id].values
             knolder_name = user['full_name'].iloc[0]
@@ -33,23 +34,20 @@ class Graph:
             return 0
 
     def test_create_graph_individual(self):
-        try:
-            data = self.get_score_and_name()
-            if data != 0:
-                contribution_sum = sum(i for i in data[1])
-                if contribution_sum != 0:
-                    plt.title(data[0])
-                    plt.bar(data[2], data[1])
-                    plt.xlabel("years")
-                    plt.ylabel('Contribution')
-                    plt.show()
 
-                else:
-                    print("The person did no contribution")
+        data = self.test_get_score_and_name()
+        if data != 0:
+            contribution_sum = sum(i for i in data[1])
+            if contribution_sum != 0:
+                plt.title(data[0])
+                plt.bar(data[2], data[1])
+                plt.xlabel("years")
+                plt.ylabel('Contribution')
+                plt.show()
+                logging.info("Creating graph successful")
+
             else:
-                print("There is no knolder id with this number")
+                logging.info("contribution check")
 
-                return True
-
-        except Exception as e:
-            raise Exception(str(e))
+        else:
+            logging.info("ID non-existing check")
