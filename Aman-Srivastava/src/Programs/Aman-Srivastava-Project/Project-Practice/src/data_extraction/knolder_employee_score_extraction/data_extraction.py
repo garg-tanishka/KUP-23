@@ -1,7 +1,7 @@
 import logging
-from src.utils.constants import dataset_path
 import pandas as pd
 import matplotlib.pyplot as plt
+from src.utils.constants import dataset_path
 
 
 class Plot_Class:
