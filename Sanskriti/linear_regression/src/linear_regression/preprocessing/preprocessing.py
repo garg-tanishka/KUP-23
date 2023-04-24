@@ -1,18 +1,25 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from pandas import DataFrame
 
-from src.utils.constant import file_path
+from src.linear_regression.pipeline.constant import file_path
+from src.linear_regression.preprocessing.processing import pre_processing
 
-class apply_linear_regression:
-    def __init__(self, file_path):
+
+class Linear_Regression:
+    def __init__(self):
         """
         getting dataframe from main function and setting its reference
          @param dataframe
-        @type knolder_id: integer
+        @type dataframe
         """
-        dataset = pd.read_csv(file_path)
-        self.data_frame = DataFrame(dataset)
-        self.file_path = file_path
-        self.create_graph_individual()
+        self.dataset = pd.read_csv(file_path, encoding='latin-1')
+        self.data_frame = pd.DataFrame(self.dataset)
+        self.processed = pre_processing(self.data_frame)
+
+
+
+
+
+
+
+
+
