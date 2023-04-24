@@ -1,40 +1,97 @@
-from collections import Counter
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from imblearn.over_sampling import SMOTE
 from imblearn.under_sampling import RandomUnderSampler
 
 
-def under_balancing_data(prepared_data):
-    X_train = prepared_data[0]
-    X_test = prepared_data[1]
-    y_train = prepared_data[2]
-    under_sample = RandomUnderSampler(sampling_strategy="majority")
-    X_train_sample, y_train_sample = under_sample.fit_resample(X_train, y_train)
-    # counter = Counter(y_train_sample)
-    return 0
+def scaling_data(X_train, X_test):
+    """
+    Performing Standardization on both training and
+    testing data by scaling them to unit variance
+    @param X_train: Training dataset
+    @param X_test: Testing dataset
+    @return: dataframes[X_train, X_test, y_train, y_test]
+    @rtype: list
+    """
+    scaling = StandardScaler()
+    X_train = pd.DataFrame(scaling.fit_transform(X_train))
+    X_test = pd.DataFrame(scaling.transform(X_test))
+    scaled_data = [X_train, X_test]
+    return scaled_data
 
 
-def train_and_test(feature_and_target):
-    features = feature_and_target[0]
-    target = feature_and_target[1]
+def train_and_test_split(X_sampled, y_sampled, X):
+    """
+    Function to perform splitting data into training and testing set,
+    calling function("scaling_data()") to perform Standard_Scaling datasets,
+    assigning back the name of columns to scaled datasets (X_train, X_test),
+    @param X_sampled: Features
+    @param y_sampled: Target
+    @param X:
+    @return: dataframes[X_train, X_test, y_train, y_test]
+    @rtype: list
+    """
     X_train, X_test, y_train, y_test = train_test_split(
-        features, target,
-        test_size=0.4, random_state=42)
-    prepared_data = [X_train, X_test, y_train, y_test]
-    return prepared_data
+        X_sampled, y_sampled, train_size=0.7, test_size=0.3, random_state=100)
+
+    X_train, X_test = scaling_data(X_train, X_test)
+
+    X_train.columns = X .columns
+    X_test.columns = X.columns
+
+    y_train.index = X_train.index
+    y_test.index = X_test.index
+
+    split_data = [X_train, X_test, y_train, y_test]
+    return split_data
+
+
+def over_sample(X_features, y_target):
+    """
+    Performing over_sampling to balance the ratio of data on both
+    majority and minority classes, and also calling: function(train_and_test_split()),
+    @param X_features: Training Features
+    @param y_target: Target Feature
+    @return: dataframes[X_train, X_test, y_train, y_test]
+    @rtype: list
+    """
+    smote = SMOTE()
+    X_os, y_os = smote.fit_resample(X_features, y_target)
+    # y_os.value_counts().plot(kind='bar')
+    partitioned_data = train_and_test_split(X_os, y_os, X_features)
+    return partitioned_data
+
+
+# def under_sampling_data(X_features, y_target, X):
+#     """
+#     Performing under_sampling to balance the ratio of data on both
+#     majority and minority classes, and also calling: function(train_and_test_split()),
+#     @param X_features: Training Features
+#     @param y_target: Target Feature
+#     @return: dataframes(X_train_scaled, X_test_scaled, y_train, y_test)
+#     @rtype: dataframe
+#     """
+#     under_sample = RandomUnderSampler(sampling_strategy="majority")
+#     X_sampled, y_sampled = under_sample.fit_resample(X_features, y_target)
+#     # counter = Counter(y_train_sample)
+#     partitioned_data = train_and_test_split(X_sampled, y_sampled, X)
+#     return partitioned_data
 
 
 def divide_feature_target(data_frame):
     """
-    Dividing features and target from dataframe
+    Dividing features and target from dataframe,
+    calling method to perform under-sampling of data
     @param data_frame: heart_dataframe
-    @return: list[training_features, target]
+    @return: dataframes[X_train_scaled, X_test_scaled, y_train, y_test]
     @rtype: list
     """
-    X_independent = data_frame.drop("TenYearCHD", axis=1)
+    X_features = data_frame.drop("TenYearCHD", axis=1)
     y_target = data_frame["TenYearCHD"]
-    divided_data = [X_independent, y_target]
-    return divided_data
+    # data_frames = under_sampling_data(X_features, y_target, X_features)
+    data_frames = over_sample(X_features, y_target)
+    return data_frames
 
 
 def drop_high_correlated(data_frame, high_corr_column):
@@ -47,19 +104,19 @@ def drop_high_correlated(data_frame, high_corr_column):
     @rtype: dataframe
     """
     data_frame.drop(high_corr_column, axis=1)
-    drop_data = data_frame.drop("education", axis=1, )
-    return drop_data
+    data_frames = divide_feature_target(data_frame)
+    return data_frames
 
 
-def correlation(data_frame):
+def calculate_correlation(data_frame):
     """
     Function to find to correlation between feature
     having more than 0.6 threshold.
     @param data_frame: heart_dataframe
-    @return: set(columns that have high correlation)
-    @rtype: set
+    @return: dataframes[X_train_scaled, X_test_scaled, y_train, y_test]
+    @rtype: list
     """
-    threshold = 0.6
+    threshold = 0.7
     col_correlation = set()
     corr_matrix = data_frame.corr()
     for i in range(len(corr_matrix.columns)):
@@ -67,20 +124,22 @@ def correlation(data_frame):
             if (corr_matrix.iloc[i, j]) > threshold:
                 column_name = corr_matrix.columns[i]
                 col_correlation.add(column_name)
-    return col_correlation
+    data_frames = drop_high_correlated(data_frame, col_correlation)
+    return data_frames
 
 
 def fill_null_values(data_frame):
     """
-    Filling columns having null values with its means values
-    with its mean values.
+    Filling columns having null values with its means values.
     @param data_frame: heart_dataframe
-    @return: heart_dataframe after filling null values
-    @rtype: dataframe
+    @return: dataframes[X_train_scaled, X_test_scaled, y_train, y_test]
+    @rtype: list
     """
-    columns_with_null = ["education", "cigsPerDay", "BPMeds", "totChol", "BMI", "glucose"]
+    columns_with_null = ["education", "cigsPerDay", "BPMeds", "totChol", "BMI", "glucose", "heartRate"]
     for i in columns_with_null:
         data_frame[i].fillna(data_frame[i].mean(), inplace=True)
+
+    data_frame = calculate_correlation(data_frame)
     return data_frame
 
 
@@ -93,10 +152,5 @@ def pre_processing(data_frame):
     @rtype: dataframe
     """
     heart_data = pd.DataFrame(data_frame)
-    handled_null = fill_null_values(heart_data)
-    corr_column = correlation(handled_null)
-    dropped_df = drop_high_correlated(handled_null, corr_column)
-    feature_and_target = divide_feature_target(dropped_df)
-    prepared_data = train_and_test(feature_and_target)
-    under_sampled_data = under_balancing_data(prepared_data)
-    return under_sampled_data
+    processed_df = fill_null_values(heart_data)
+    return processed_df
