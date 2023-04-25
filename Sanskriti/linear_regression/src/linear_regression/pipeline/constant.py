@@ -1,5 +1,5 @@
 import pathlib
-import pandas as pd
+
 
 
 path = pathlib.Path(__file__).resolve().parent.parent.parent
