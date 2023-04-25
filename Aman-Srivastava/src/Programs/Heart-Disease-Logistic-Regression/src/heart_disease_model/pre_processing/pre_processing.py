@@ -1,8 +1,8 @@
+import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from imblearn.over_sampling import SMOTE
-from imblearn.under_sampling import RandomUnderSampler
 
 
 def scaling_data(X_train, X_test):
@@ -37,7 +37,7 @@ def train_and_test_split(X_sampled, y_sampled, X):
 
     X_train, X_test = scaling_data(X_train, X_test)
 
-    X_train.columns = X .columns
+    X_train.columns = X.columns
     X_test.columns = X.columns
 
     y_train.index = X_train.index
@@ -57,26 +57,20 @@ def over_sample(X_features, y_target):
     @rtype: list
     """
     smote = SMOTE()
+
+    X_extra_1000 = X_features.iloc[:2000]
+    y_extra_1000 = y_target.iloc[:2000]
+
+    X_features = pd.concat([X_features, X_extra_1000], ignore_index=True)
+    y_target = pd.concat([y_target, y_extra_1000], ignore_index=True)
+
     X_os, y_os = smote.fit_resample(X_features, y_target)
+
     # y_os.value_counts().plot(kind='bar')
+    # plt.show()
+
     partitioned_data = train_and_test_split(X_os, y_os, X_features)
     return partitioned_data
-
-
-# def under_sampling_data(X_features, y_target, X):
-#     """
-#     Performing under_sampling to balance the ratio of data on both
-#     majority and minority classes, and also calling: function(train_and_test_split()),
-#     @param X_features: Training Features
-#     @param y_target: Target Feature
-#     @return: dataframes(X_train_scaled, X_test_scaled, y_train, y_test)
-#     @rtype: dataframe
-#     """
-#     under_sample = RandomUnderSampler(sampling_strategy="majority")
-#     X_sampled, y_sampled = under_sample.fit_resample(X_features, y_target)
-#     # counter = Counter(y_train_sample)
-#     partitioned_data = train_and_test_split(X_sampled, y_sampled, X)
-#     return partitioned_data
 
 
 def divide_feature_target(data_frame):
@@ -89,7 +83,6 @@ def divide_feature_target(data_frame):
     """
     X_features = data_frame.drop("TenYearCHD", axis=1)
     y_target = data_frame["TenYearCHD"]
-    # data_frames = under_sampling_data(X_features, y_target, X_features)
     data_frames = over_sample(X_features, y_target)
     return data_frames
 
@@ -143,14 +136,15 @@ def fill_null_values(data_frame):
     return data_frame
 
 
-def pre_processing(data_frame):
+def pre_processing(dataset_path):
     """
     Doing all the pre-processing of data:
     Cleaning,Filling,Feature_Selection etc.
-    @param data_frame: heart_data
+    @param dataset_path: heart_data
     @return: heart_data after pre-processing
     @rtype: dataframe
     """
-    heart_data = pd.DataFrame(data_frame)
+    readfile = pd.read_csv(dataset_path)
+    heart_data = pd.DataFrame(readfile)
     processed_df = fill_null_values(heart_data)
     return processed_df

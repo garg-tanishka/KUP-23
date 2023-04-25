@@ -1,6 +1,5 @@
 import pandas as pd
 from heart_disease_model.pre_processing.pre_processing import pre_processing
-from src.utils.helpers.hyper_tuning import hyper_parameter_tuning
 from src.utils.helpers.backward_elimination import backward_elimination
 from src.utils.helpers.K_Classification import k_classifier
 from src.utils.constants import dataset_path
@@ -8,8 +7,7 @@ from src.utils.constants import dataset_path
 
 class Heart_Disease:
     def __init__(self):
-        self.readfile = pd.read_csv(dataset_path)
-        self.processed_data = pre_processing(self.readfile)
+        self.processed_data = pre_processing(dataset_path)
         self.apply_model()
 
     def apply_model(self):
