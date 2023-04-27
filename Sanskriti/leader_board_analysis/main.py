@@ -1,4 +1,4 @@
-from src.extraction.data_extraction import create_graph_individual
+from src.data_analysis.leader_board_analysis import create_graph_individual
 
 if __name__ == "__main__":
     readinput = int(input("Enter a Knolder id: "))
