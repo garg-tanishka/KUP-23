@@ -1,16 +1,10 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 from numpy import int64, float64
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-from src.linear_regression.pipeline.constant import file_path
+from src.utils.constant import file_path
 import unittest
 import logging
 
-from src.linear_regression.preprocessing.processing import type_conversion, one_hot_encoding, drop_columns, \
-    feature_selection, pre_processing, turn_memory_into_MB
+from src.linear_regression.preprocessing.processing import pre_processing, turn_memory_into_MB
 
 
 class Test_Linear_Regression:

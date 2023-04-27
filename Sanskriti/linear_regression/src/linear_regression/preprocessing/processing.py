@@ -1,4 +1,4 @@
-import logging
+
 
 import numpy as np
 import pandas as pd
@@ -67,6 +67,11 @@ def one_hot_encoding(data_frame):
 
 
 def turn_memory_into_MB(value):
+    """ getting the value from memory amount column and converting GB and TB to MB
+        @param : memory_amount column value
+        @return : converted value to MB
+        @rtype : float
+    """
     if "GB" in value:
         return float(value[:value.find("GB")]) * 1000
     elif "TB" in value:
@@ -113,6 +118,11 @@ def type_conversion(data_frame):
 
 
 def pre_processing(dataset):
+    """
+    getting the dataframe and pre processing it and splitting it into training and testing data
+    :param dataframe
+    :return list[X_train,X_test,y_train,y_test]
+    """
     data_frame_new = type_conversion(dataset)
     data_frame_encoded = one_hot_encoding(data_frame_new)
     data_frame_dropped = drop_columns(data_frame_encoded)

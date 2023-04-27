@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 from sklearn.ensemble import RandomForestRegressor
-from src.linear_regression.pipeline.constant import file_path
+from src.utils.constant import file_path
 from src.linear_regression.preprocessing.processing import pre_processing
 
 
@@ -34,7 +34,7 @@ class Linear_Regression:
         forest = RandomForestRegressor()
         forest.fit(X_train, y_train)
         accuracy = forest.score(X_test, y_test)
-        print(accuracy)
+
 
         y_predict = forest.predict(X_test)
         plt.scatter(y_predict, y_test)
@@ -43,3 +43,5 @@ class Linear_Regression:
         plt.scatter(y_predict, y_test)
         plt.plot(range(0, 3000), range(0, 3000), c="red")
         plt.show()
+
+        return accuracy
