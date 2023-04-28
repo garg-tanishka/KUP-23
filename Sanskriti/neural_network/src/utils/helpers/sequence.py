@@ -15,5 +15,5 @@ def layer_creation():
         # Output Layer
         Dense(units=3, activation="sigmoid"),
     ])
-    model.compile(loss="categorical_crossentropy", optimizer="adam", metrics="accuracy")
+    model.compile(loss="categorical_crossentropy", optimizer="adam", metrics=["accuracy"])
     return model
