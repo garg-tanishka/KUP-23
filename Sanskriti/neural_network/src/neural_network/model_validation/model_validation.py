@@ -1,4 +1,9 @@
 def validation(model_data):
+    """
+    getting the list from training data and dividing it into training and spilt data
+    @param model_data
+    @return: accuracy
+    """
     model = model_data[0]
     X_train = model_data[1]
     X_test = model_data[2]

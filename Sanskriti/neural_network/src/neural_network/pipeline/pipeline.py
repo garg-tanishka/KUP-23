@@ -17,6 +17,10 @@ class Neural_Network:
         self.pipeline()
 
     def pipeline(self):
+        """
+        getting the dataframe and calling all the steps in building the model
+        @return: accuracy
+        """
         processed_dataframe = pre_processing(self.dataset)
         trained_model = training_model(processed_dataframe)
         accuracy = validation(trained_model)
