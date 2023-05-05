@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
 
-class Pre_Processing:
+class PreProcessing:
     def __init__(self, dataset):
         self.file_path = dataset
 
@@ -54,53 +54,53 @@ class Pre_Processing:
 
     def divide_feature_target(self, heart_df):
         try:
-            X_features = heart_df.drop("TenYearCHD", axis=1)
+            x_features = heart_df.drop("TenYearCHD", axis=1)
             y_target = heart_df["TenYearCHD"]
-            return self.over_sample(X_features, y_target)
+            return self.over_sample(x_features, y_target)
 
         except:
             return "failed to divide feature and target!"
 
-    def over_sample(self, X_features, y_target):
+    def over_sample(self, x_features, y_target):
         try:
             smote = SMOTE()
-            X_extra_1000 = X_features.iloc[:2000]
+            x_extra_1000 = x_features.iloc[:2000]
             y_extra_1000 = y_target.iloc[:2000]
-            X_features = pd.concat([X_features, X_extra_1000], ignore_index=True)
+            x_features = pd.concat([x_features, x_extra_1000], ignore_index=True)
             y_target = pd.concat([y_target, y_extra_1000], ignore_index=True)
-            X_sampled, y_sampled = smote.fit_resample(X_features, y_target)
-            return self.train_and_test_split(X_sampled, y_sampled, X_features)
+            x_sampled, y_sampled = smote.fit_resample(x_features, y_target)
+            return self.train_and_test_split(x_sampled, y_sampled, x_features)
 
         except:
             return "failed to perform oversampling of data!"
 
-    def train_and_test_split(self, X_sampled, y_sampled, X_features):
+    def train_and_test_split(self, x_sampled, y_sampled, x_features):
 
         try:
-            X_train, X_test, y_train, y_test = train_test_split(
-                X_sampled, y_sampled, train_size=0.7, test_size=0.3, random_state=100)
+            x_train, x_test, y_train, y_test = train_test_split(
+                x_sampled, y_sampled, train_size=0.7, test_size=0.3, random_state=100)
 
-            X_train, X_test = self.scaling_data(X_train, X_test)
+            x_train, x_test = self.scaling_data(x_train, x_test)
 
-            X_train.columns = X_features.columns
-            X_test.columns = X_features.columns
+            x_train.columns = x_features.columns
+            x_test.columns = x_features.columns
 
-            y_train.index = X_train.index
-            y_test.index = X_test.index
+            y_train.index = x_train.index
+            y_test.index = x_test.index
 
-            split_data = [X_train, X_test, y_train, y_test]
+            split_data = [x_train, x_test, y_train, y_test]
             return split_data
 
         except:
             return "failed to split data into training and testing!"
 
     @staticmethod
-    def scaling_data(X_train, X_test):
+    def scaling_data(x_train, x_test):
         try:
             scaling = StandardScaler()
-            X_train = pd.DataFrame(scaling.fit_transform(X_train))
-            X_test = pd.DataFrame(scaling.transform(X_test))
-            scaled_data = [X_train, X_test]
+            x_train = pd.DataFrame(scaling.fit_transform(x_train))
+            x_test = pd.DataFrame(scaling.transform(x_test))
+            scaled_data = [x_train, x_test]
             return scaled_data
         except:
             return "failed to perform scaling of data!"
