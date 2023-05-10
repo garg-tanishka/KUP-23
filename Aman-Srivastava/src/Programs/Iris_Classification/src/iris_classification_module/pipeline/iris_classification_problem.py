@@ -12,17 +12,7 @@ def train_decorator(train_class):
             self.user_input = train_class(user_input)
 
         def get_model(self):
-            try:
-                data = self.user_input.input
-                command = data["command"].lower()
-
-                if command == "train":
-                    return self.model_pipeline()
-                else:
-                    return "Invalid Command! Please Try: 'train' "
-
-            except:
-                return "Invalid Input! Please Try Again"
+            return self.model_pipeline()
 
         def model_pipeline(self):
             try:
@@ -35,7 +25,7 @@ def train_decorator(train_class):
                 y_test = pre_processed_data[3]
 
                 history = model.fit(x_train, y_train, validation_data=(x_test, y_test), epochs=20)
-                pickle.dump(model, open(model_path/'iris_model.pkl', 'wb'))
+                pickle.dump(model, open(model_path / 'iris_model.pkl', 'wb'))
 
                 score = history.history["accuracy"][-1]
                 accuracy_score = round(score, 2)
