@@ -21,13 +21,13 @@ def divide_feature_target(iris_dataframe):
     """
     Function to divide features and target and also split them,
     @param iris_dataframe: iris_dataframe
-    @return: dataframe[X_features, X_test, y_train, y_test]
+    @return: dataframe[x_features, X_test, y_train, y_test]
     @rtype: list
     """
-    X_feature = iris_dataframe.drop(["Species", "Id"], axis=1)
+    x_feature = iris_dataframe.drop(["Species", "Id"], axis=1)
     y_target = iris_dataframe["Species"]
     y_target = categorical_conversion(y_target)
-    pre_processed_data = split_data(X_feature, y_target)
+    pre_processed_data = split_data(x_feature, y_target)
     return pre_processed_data
 
 
@@ -44,15 +44,15 @@ def categorical_conversion(y_target):
     return y_target
 
 
-def split_data(X_feature, y_target):
+def split_data(x_feature, y_target):
     """
     Function to perform split operations on feature and target
-    @param X_feature: features
+    @param x_feature: features
     @param y_target: target value
-    @return: dataframe[X_features, X_test, y_train, y_test]
+    @return: dataframe[x_features, X_test, y_train, y_test]
     @rtype: dataframe
     """
     X_train, X_test, y_train, y_test = train_test_split(
-        X_feature, y_target, test_size=0.2, random_state=42)
+        x_feature, y_target, test_size=0.2, random_state=42)
     divided_data = [X_train, X_test, y_train, y_test]
     return divided_data

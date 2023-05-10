@@ -1,15 +1,16 @@
 import pickle
 import numpy as np
 import pandas as pd
-from src.utils.constants import iris_model
+from src.utils.constants import ml_model
 
-model = pickle.load(open(iris_model, 'rb'))
+iris_model = pickle.load(open(ml_model, 'rb'))
 
 
 def prediction_decorator(prediction_class):
     class MakePrediction:
 
         def __init__(self, user_input):
+
             self.input = prediction_class(user_input)
             self.species_list = ['setosa', 'versicolor', 'virginica']
 
@@ -33,13 +34,16 @@ def prediction_decorator(prediction_class):
                                }
 
                 flower_dimensions = pd.DataFrame(flower_data)
-
-                prediction = model.predict(flower_dimensions)
+                prediction = iris_model.predict(flower_dimensions)
                 species = np.argmax(prediction)
-
                 result = "Classified flower is: " + self.species_list[species].upper()
+
                 return result
+
+            except Exception as e:
+                return str(e)
+
             except:
-                return "no input provided! please try again"
+                return "Invalid Parameters Provided!"
 
     return MakePrediction
