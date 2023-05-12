@@ -3,9 +3,6 @@ E
 src/utils/__init__.py,5/f/5fe712ad9bdfa86bdb6bde4773c0a66bf4ec509a
 J
 src/operations/__init__.py,7/9/792c45e4a83001862d845e00523b42ffb1120778
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 H
 src/utils/db/__init__.py,f/b/fbb4c82ee095b1e5bc86572184d37ad0fe51c2ee
 M
@@ -25,5 +22,8 @@ U
 :
 
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+:
+
+.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 Q
 !src/operations/crud_operations.py,0/3/0351250eaf553aedd371fef6dd6a969d4bf95299

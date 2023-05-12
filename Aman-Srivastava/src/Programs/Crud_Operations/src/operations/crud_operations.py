@@ -33,6 +33,7 @@ class CrudOperations:
                 cursor.execute(f"use {db_name};")
                 cursor.execute("select database()")
                 current_db = cursor.fetchone()
+
                 return current_db
 
             elif user_input.split()[0] == "show" and db_name in databases:
