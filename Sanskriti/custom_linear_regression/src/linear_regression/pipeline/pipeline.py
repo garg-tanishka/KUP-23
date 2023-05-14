@@ -1,7 +1,8 @@
-from src.linear_regression.model_training.model_training import training_linear_regression
-from src.utils.constant import file_path
+from Sanskriti.custom_linear_regression.src.linear_regression.model_training.model_training import linear_regression
+from Sanskriti.custom_linear_regression.src.linear_regression.model_validation.model_validation import model_validation
+from Sanskriti.custom_linear_regression.src.utils.constant import file_path
 import pandas as pd
-from src.linear_regression.pre_processing.processing import pre_processing
+from Sanskriti.custom_linear_regression.src.linear_regression.pre_processing.processing import pre_processing
 
 
 class Custom_Linear_Regression:
@@ -11,7 +12,7 @@ class Custom_Linear_Regression:
          @param dataframe
         @type dataframe
         """
-        self.dataset = pd.read_csv(file_path, encoding='latin-1')
+        self.dataset = pd.read_csv(file_path)
         self.data_frame = pd.DataFrame(self.dataset)
         self.pipeline()
 
@@ -20,5 +21,8 @@ class Custom_Linear_Regression:
         getting the dataframe and calling all the steps in building the model
         @return: accuracy
         """
-        processed_dataframe = pre_processing(self.dataset)
-        trained_model = training_linear_regression(processed_dataframe)
+        processed_dataframe = pre_processing(self.data_frame)
+        trained_model = linear_regression(processed_dataframe)
+        accuracy = model_validation(trained_model)
+        print(accuracy)
+
