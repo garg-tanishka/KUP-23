@@ -1,0 +1,39 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="1">
+            <item index="0" class="java.lang.String" itemvalue="numpy" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N801" />
+          <option value="N802" />
+          <option value="N806" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="src.linear_regression.model_training.training.X_train_scale" />
+          <option value="Sanskriti.neural_network.src.neural_network.pipeline.pipeline.src" />
+          <option value="Sanskriti.neural_network.src.neural_network.pipeline.pipeline.file_path" />
+          <option value="Sanskriti.neural_network.src.utils.helpers.constant" />
+          <option value="Sanskriti.neural_network.src.neural_network.model_validation.model_validation.training_model" />
+          <option value="Sanskriti.neural_network.test_suite.unit_testing.test.target_feature" />
+          <option value="credit" />
+          <option value="data_frame" />
+          <option value="dataframe" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
