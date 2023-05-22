@@ -23,7 +23,7 @@ class DataValidation(BaseModel):
 
     @validator('age', 'phone', 'emp_code')
     def check_positive_integers(cls, value):
-        if value < 0:
+        if value < 1:
             raise ValueError("Negative integer value not allowed")
         return value
 
@@ -33,7 +33,7 @@ class EmpIdValidation(BaseModel):
 
     @validator('emp_id')
     def check_negative_values(cls, value):
-        if value < 0:
+        if value < 1:
             raise ValueError(negative_value)
         return value
 
@@ -55,8 +55,8 @@ def get_db(param1):
         db_operation = DatabaseOperations()
         value = DbQueryValidation(db_query=param1)
         if value.db_query:
-            result = db_operation.get_database()
-            return jsonify(result)
+            result, status = db_operation.get_database()
+            return jsonify(result), status
     except ValueError:
         return invalid_input, 400
 
@@ -67,8 +67,8 @@ def create_db(param1, param2):
         db_operation = DatabaseOperations()
         value = DbQueryValidation(db_query=param1)
         if value.db_query:
-            result = db_operation.create_database(param2)
-            return jsonify(result)
+            result, status = db_operation.create_database(param2)
+            return jsonify(result), status
     except ValueError:
         return invalid_input, 400
 
@@ -79,27 +79,27 @@ def delete_db(param1, param2):
         db_operation = DatabaseOperations()
         value = DbQueryValidation(db_query=param1)
         if value.db_query:
-            result = db_operation.delete_database(param2)
-            return jsonify(result)
+            result, status = db_operation.delete_database(param2)
+            return jsonify(result), status
     except ValueError:
-        return invalid_input, 400
+        return invalid_input, 403
 
 
 @main.route('/knoldus/<value>', methods=['GET'])
 def get_employee_data(value):
     operation = CrudOperations()
     if value == "table":
-        result = operation.get_tables_data()
-        return jsonify(result)
+        result, status = operation.get_tables_data()
+        return jsonify(result), status
     else:
         try:
             value = int(value)
             value = EmpIdValidation(emp_id=value)
-            result = operation.get_individual_entries(value.emp_id)
-            return jsonify(result)
+            result, status = operation.get_individual_entries(value.emp_id)
+            return jsonify(result), status
 
         except ValueError:
-            return invalid_input, 400
+            return invalid_input, 403
 
 
 @main.route('/knoldus/<value>', methods=['PUT'])
@@ -109,40 +109,42 @@ def put_employee_data(value):
         value = EmpIdValidation(emp_id=value)
         user_data = request.get_json()
         response = []
+        status = 0
         try:
             for item in user_data:
-                valid_data = DataValidation(**item)
+                DataValidation(**item)
                 insertion = CrudOperations()
-                result = insertion.update_table_entries(value.emp_id, item)
+                result, status = insertion.update_table_entries(value.emp_id, item)
                 response.append(result)
 
-            return jsonify(response)
+            return jsonify(response), status
 
         except ValueError:
-            return invalid_input, 400
+            return invalid_input, 403
 
     except ValueError:
-        return invalid_input, 400
+        return invalid_input, 403
 
 
 @main.route('/knoldus/<value>', methods=['POST'])
 def create_entries(value):
     user_data = request.get_json()
     response = []
+    status = 0
     if value == "table":
         try:
             for item in user_data:
-                valid_data = DataValidation(**item)
+                DataValidation(**item)
                 insertion = CrudOperations()
-                result = insertion.update_table(item)
+                result, status = insertion.update_table(item)
                 response.append(result)
-            return jsonify(response)
+            return jsonify(response), status
 
         except ValueError:
-            return invalid_input, 400
+            return invalid_input, 403
 
     else:
-        return invalid_input, 400
+        return invalid_input, 403
 
 
 @main.route('/knoldus/<value>', methods=['DELETE'])
@@ -150,17 +152,17 @@ def delete_entries(value):
     operation = CrudOperations()
 
     if value == "table":
-        result = operation.delete_all_entries()
-        return jsonify(result)
+        result, status = operation.delete_all_entries()
+        return jsonify(result), status
     else:
         try:
             value = int(value)
             value = EmpIdValidation(emp_id=value)
-            result = operation.delete_individual_entries(value.emp_id)
-            return jsonify(result)
+            result, status = operation.delete_individual_entries(value.emp_id)
+            return jsonify(result), status
 
         except ValueError:
-            return invalid_input, 400
+            return invalid_input, 403
 
 
 if __name__ == "__main__":
