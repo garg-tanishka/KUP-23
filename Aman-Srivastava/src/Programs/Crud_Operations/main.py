@@ -13,7 +13,7 @@ class DataValidation(BaseModel):
     age: int
     phone: int
     email: str
-    emp_code: int
+    emp_id: int
 
     @validator('name', 'email')
     def check_string_values(cls, value):
@@ -21,7 +21,7 @@ class DataValidation(BaseModel):
             raise ValueError("Only string values are allowed")
         return value
 
-    @validator('age', 'phone', 'emp_code')
+    @validator('age', 'phone', 'emp_id')
     def check_positive_integers(cls, value):
         if value < 1:
             raise ValueError("Negative integer value not allowed")
@@ -90,6 +90,7 @@ def get_employee_data(value):
     operation = CrudOperations()
     if value == "table":
         result, status = operation.get_tables_data()
+        print(result)
         return jsonify(result), status
     else:
         try:
@@ -134,6 +135,7 @@ def create_entries(value):
     if value == "table":
         try:
             for item in user_data:
+                print(item)
                 DataValidation(**item)
                 insertion = CrudOperations()
                 result, status = insertion.update_table(item)

@@ -4,7 +4,7 @@ from src.utils.db.db_connection import db_connection
 cursor, connection = db_connection()
 view_table = "show tables"
 no_table = "no such table exists!"
-table_name = "demo"
+table_name = "knoldus"
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
@@ -31,13 +31,13 @@ class CrudOperations:
                 if len(table_data) != 0:
                     for items in table_data:
                         table_items.append({'name': items[0], 'age': items[1], 'phone': items[2],
-                                            'email': items[3], 'emp_code': items[4]})
+                                            'email': items[3], 'emp_id': items[4]})
                     logging.info("Task: returning data from table executed")
                     status = 200
                     return table_items, status
                 else:
                     msg = "table is empty!"
-                    status = 204
+                    status = 404
                     logging.info("Task: empty table in (get_tables_data) executed")
                     return msg, status
             else:
@@ -64,7 +64,7 @@ class CrudOperations:
             logging.info("Task: fetching all tables from db in (get_individual_entries) executed")
 
             if table_name in tables:
-                query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_code = {emp_id}"
+                query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_id = {emp_id}"
                 cursor.execute(query)
                 count = cursor.fetchone()
                 logging.info("Task: fetching emp data based on id in (get_individual_entries) executed")
@@ -76,7 +76,7 @@ class CrudOperations:
                     return msg, error
 
                 else:
-                    query = f'SELECT * FROM {table_name} WHERE emp_code = {emp_id}'
+                    query = f'SELECT * FROM {table_name} WHERE emp_id = {emp_id}'
                     cursor.execute(query)
                     individual_data = cursor.fetchall()
                     status = 200
@@ -105,7 +105,7 @@ class CrudOperations:
             logging.info("Task: fetch all tables from db in (delete_individual_entries) executed")
 
             if table_name in tables:
-                query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_code = {emp_id}"
+                query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_id = {emp_id}"
                 cursor.execute(query)
                 count = cursor.fetchone()
                 logging.info("Task: selecting count from table based on id in (delete_individual_entries) executed")
@@ -117,7 +117,7 @@ class CrudOperations:
                     return msg, status
 
                 else:
-                    query = f'DELETE FROM {table_name} WHERE emp_code = {emp_id}'
+                    query = f'DELETE FROM {table_name} WHERE emp_id = {emp_id}'
                     cursor.execute(query)
                     connection.commit()
                     msg = f'deleted entry of user id:{emp_id} successfully'
@@ -137,13 +137,23 @@ class CrudOperations:
     @staticmethod
     def delete_all_entries():
         try:
-            delete_query = f"DELETE FROM {table_name}"
-            cursor.execute(delete_query)
-            connection.commit()
-            logging.error("Task: committing connection after deleted all entries in (delete_all_entries) executed")
-            msg = "deleted all entries from table"
-            status = 200
-            return msg, status
+            query = f"SELECT * FROM {table_name}"
+            cursor.execute(query)
+            table_data = cursor.fetchall()
+            logging.info("Task: selecting data from table in (get_tables_data) executed")
+
+            if len(table_data) != 0:
+                delete_query = f"DELETE FROM {table_name}"
+                cursor.execute(delete_query)
+                connection.commit()
+                logging.error("Task: committing connection after deleted all entries in (delete_all_entries) executed")
+                msg = "deleted all entries from table"
+                status = 200
+                return msg, status
+            else:
+                msg = "table is already empty!"
+                logging.info("Task: empty table in (get_tables_data) executed")
+                return msg
 
         except Exception as e:
             logging.info("Task: delete all entries from table in (delete_all_entries) executed")
@@ -167,29 +177,29 @@ class CrudOperations:
                 'age': item['age'],
                 'phone': item['phone'],
                 'email': item['email'],
-                'emp_code': item['emp_code'],
-
+                'emp_id': item['emp_id']
             }
 
             if table_name in tables:
-                query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_code = {emp_id}"
+                query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_id = {emp_id}"
                 cursor.execute(query)
-                count = cursor.fetchone()
+                existing_entry = cursor.fetchone()
                 logging.info("Task: select from table based on id in (update_table_entries) executed")
 
-                if count[0] == 0:
+                if existing_entry is None:
                     msg = f"Emp ID: {emp_id} does not exist in the table"
                     status = 404
                     logging.info("Task: employee id not found in (update_table_entries) executed")
                     return msg, status
                 else:
-                    update_query = f"UPDATE {table_name} SET name = %(name)s, age = %(age)s, phone = %(phone)s, email = %(email)s, emp_code = %(emp_code)s WHERE emp_code = {emp_id}"
+                    update_query = f"UPDATE {table_name} SET name = %(name)s, age = %(age)s, phone = %(phone)s, email = %(email)s, emp_id = %(emp_id)s WHERE emp_id = {emp_id}"
                     cursor.execute(update_query, update_values)
                     connection.commit()
                     logging.info("Task: committing connection after update of entry in (update_table_entries) executed")
                     msg = f"updated entries of id: {emp_id} successfully"
                     status = 202
                     return msg, status
+
             else:
                 msg = "no table exists in database"
                 status = 404
@@ -212,20 +222,33 @@ class CrudOperations:
         user_age = item['age']
         user_phone = item['phone']
         user_email = item['email']
-        user_emp_code = item['emp_code']
+        user_emp_id = item['emp_id']
 
         try:
-            insert_data_query = f"INSERT INTO {table_name} (name, age, phone, email, emp_code) VALUES (%s, %s, %s, %s, %s)"
-            user_data = [(user_name, user_age, user_phone, user_email, user_emp_code)]
+            query = f"SELECT COUNT(*) FROM {table_name} WHERE emp_id = {user_emp_id}"
+            cursor.execute(query)
+            response = cursor.fetchone()
+            count = response[0]
+            logging.info("Task: getting count from table based on id in {update_table} executed")
 
-            for data in user_data:
-                cursor.execute(insert_data_query, data)
+            if count > 0:
+                msg = f"entry of id: {user_emp_id} already exists in table!"
+                status = 409
+                logging.info("Task: entry already exists in table in {update_table} executed")
+                return msg, status
+            else:
+                insert_data_query = f"INSERT INTO {table_name} (name, age, phone, email, emp_id) VALUES (%s, %s, %s, %s, %s)"
+                user_data = [(user_name, user_age, user_phone, user_email, user_emp_id)]
 
-            connection.commit()
-            logging.info("Task: committing connection in (update_table) executed")
-            msg = f"Data Successfully Inserted Into Table: {table_name}"
-            status = 200
-            return msg, status
+                for data in user_data:
+                    cursor.execute(insert_data_query, data)
+
+                connection.commit()
+                connection.close()
+                logging.info("Task: committing connection in (update_table) executed")
+                msg = f"Data Successfully Inserted Into Table: {table_name}"
+                status = 200
+                return msg, status
 
         except Exception as e:
             logging.error("Some error occured in (update_table) function")
